@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href ="https ://cdn.jsdelivr.net/npm/boostrap@5.3.3/dist/css/bootstrap.min.css" rel= "">
+    <link rel="stylesheet" href="./estilos.css">
     <title>Ape Regina</title>  
    
 </head>
 <body>
     <h1>Ape Regina Boutique</h1>
-     <script src="registro.js"> </script>
-     <footer></footer>
   
-</body>
-
+    <form id="ingreso">
+      <input type="text" id="usuario" placeholder="ingrese su usuario">
+      <input type="password" id="clave" placeholder="ingrese su clave">
+      <input type="submit" value="Enviar">
+    </form>
+  
+    <div id="productos-container" class="container mt-4"></div>
+  
+    <h2>Carrito</h2>
+    <div id="carrito"></div>
+    <div id="funciones"></div>
+    <div id="prodductos-container"></div>
+    <div id="total-container" class="alert alert-info mt-3" role="alert">
+      Total: $0
+    </div>
+  
+    <script src="funciones.js"></script>
+    <script src="carrito.js"></script>
+  </body>
 </html>
